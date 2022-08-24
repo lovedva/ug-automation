@@ -187,7 +187,7 @@ def main(fn,fnout):
         e.set_dxf_attrib("lineweight",-1)
      
     print ("查找所有折断线样条曲线对象，设置图层为细实线层")
-    breaklines = msp.query('SPLINE[color==6]') #查找折断线对象
+    breaklines = msp.query('SPLINE[color==3]') #查找折断线对象
     for e in breaklines:
         # print (e.dxfattribs().items()) #获取所有可以使用的dxf属性attribute
         # print (e.dxftype())
