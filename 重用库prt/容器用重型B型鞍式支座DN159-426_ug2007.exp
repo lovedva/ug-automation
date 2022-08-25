@@ -1,0 +1,28 @@
+﻿// Version:  2
+[MilliMeter]D0_容器外径=166
+[MilliMeter]h_鞍座高度=200
+[MilliMeter]l1_底板=160
+[MilliMeter]b1_底板=120
+[MilliMeter]σ1_底板=8
+[MilliMeter]σ2_腹板=8
+// [MilliMeter]l3_筋板=96  //一个筋板没有这一项
+[MilliMeter]b3_筋板=96  
+[MilliMeter]σ3_筋板=8
+[MilliMeter]lARC_弧长_垫板=210  //似乎也不参与草图生成模型
+[MilliMeter]b4_垫板=160
+[MilliMeter]σ4_垫板=6
+[MilliMeter]e_垫板=28
+[MilliMeter]l2_螺栓间距=100
+
+//以下变量不参与草图生成模型 tag
+(String) t_备注="P12"
+(String) t_参考标准="容器支座_JB／T_4712.1-2007"
+(String) t_标准地址="localhost://"
+(Boolean)t_布尔值备用=true
+(String) t_Name_支座名称="重型／B型鞍式支座"
+(String) t_公称直径DN_tag="DN159"
+(String) t_允许载荷QkN="50"
+(String) t_材料名称="Q??待补充"
+[Kilogram]t_带垫板_鞍座质量=6
+[Kilogram]t_不垫板_鞍座质量=4
+[Kilogram]t_Δm_增加100m高度增加的质量kg=2

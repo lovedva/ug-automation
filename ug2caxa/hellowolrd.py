@@ -59,7 +59,7 @@ def main(fn,fnout):
 
     print ("查找所有尺寸线，设置图层为尺寸线层")
     dimensions = msp.query('DIMENSION[color==3 & lineweight==13]') #在绿色中查找尺寸对象
-    for e in dimensions:
+    for e in dimensions: #https://ezdxf.readthedocs.io/en/stable/dxfentities/dimension.html#ezdxf.entities.Dimension.dxf.text
         # print (e.dxfattribs().items()) #获取所有可以使用的dxf属性attribute
         # print (e.get_dxf_attrib("color")) #打印颜色索引，绿色3
         # print(e.dxf.text, "尺寸结束")
