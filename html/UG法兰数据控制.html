@@ -57,18 +57,18 @@
 </div>
 
 <!-- 法兰尺寸控制表单 -->
-{{flange[0].DN_公称直径}}
+{{ message }}
 <div class="row mb-1">
     <div class="input-group">
         <div class="form-floating col-2">
             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>凹凸面O形槽-薛欣欣</option>
+              <option selected>凹凸面O形槽</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
             <label for="floatingSelect">法兰类型</label>
-          </div>
+          </div>&nbsp
           <div class="form-floating col-1 ">
             <select class="form-select"  id="floatingSelect" aria-label="Floating label select example">
               <option selected>DN10</option>
@@ -111,11 +111,11 @@
 
             </select>
             <label for="floatingSelect">公称尺寸</label>
-          </div>
+          </div>&nbsp
         <div class="form-floating col-1">
            <input type="text" class="form-control" id="floatingPassword" placeholder="Password" value="整体钢制管法兰HG/T20596-1997丨受内部压力的轴向密封沟槽尺寸(GB/T3452.3—2005)">
            <label for="floatingPassword">参考标准</label>
-        </div>
+        </div>&nbsp
     </div>
 </div>
 
@@ -269,15 +269,27 @@
     </tbody>
     </table>
 </div> -->
-{{ message }}
+
 
 </div> <!--  container-fluid结束 -->
+
 <script>
-    var cmd="powershell -Command \"&{'mima'|daima}\"";
-        let WSH=new ActiveXObject("WScript.Shell");
-        WSH.run(cmd);
+    // var cmd="powershell -Command \"&{'mima'|daima}\"";
+    //     let WSH=new ActiveXObject("WScript.Shell");
+    //     WSH.run(cmd);
+
+// // vuejs
+//     const app = {
+//         data() {
+//             return {
+//             message: 0,
+//                 } //return
+//             } //data
+//     }//app
+//     Vue.createApp(app).mount('#app')
 </script>
 <script src="myvue.js"></script>
+
 </body>
 </html>
 

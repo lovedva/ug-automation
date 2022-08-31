@@ -7,9 +7,11 @@ $outputpath= $PSScriptRoot+"\json_output\"+$xlsName+".txt"
 $tbName="C2"
 write-host "tbName"$tbName
 # 设置表头行数起点和终点，0号为起点，1号为终点
-$tbHead="B5","P5"
+$tbHead="B5","U5"
+# 设置字段类型起点和终点，0号为起点，1号为终点
+# $fieldClass="B3","P3"
 # 设置表内数据起点和终点
-$tbContent="B6","P16"
+$tbContent="B6","U15"
 
 # $xlFixedFormat = "Microsoft.Office.Interop.Excel.xlFixedFormatType" -as [type] #设置excel文件类型
 $ExcelObj = New-Object -comobject Excel.Application
@@ -33,17 +35,27 @@ foreach ($elemnt in $ws.Range($tbContent[0],$ws.Cells($ws.Range($tbContent[1]).R
 #遍历行
     foreach ($item in $ws.Range($ws.Cells($elemnt.Row,$elemnt.Column) , $ws.Cells($elemnt.Row,$ws.Range($tbContent[1]).Column))){
         # Write-Host $elemnt.Value2
-        $jsondb =$jsondb + ("`""+$ws.Cells.Item($ws.Range($tbHead[0],$tbHead[1]).Row,$item.Column).Value2+"`":"+$item.value2+" , ")
+        # Write-Output $item.Value2.GetType().Name
+        if ($item.Value2.GetType().Name -eq "String"){ #判断获取表格的值（用作key）是否为字符串，如果是就加引号，否就不加
+            $jsondb =$jsondb + ("`""+$ws.Cells.Item($ws.Range($tbHead[0],$tbHead[1]).Row,$item.Column).Value2+"`": `""+$item.value2+"`" , ")
+        }else {
+            $jsondb =$jsondb + ("`""+$ws.Cells.Item($ws.Range($tbHead[0],$tbHead[1]).Row,$item.Column).Value2+"`":"+$item.value2+" , ")
+        }
     } #遍历行结束
     $jsondb = $jsondb +" },`n"
 }    #遍历列结束
 
 Write-Output $jsondb
 
-Write-Output (Test-Path $outputpath)
+if ((Test-Path $outputpath) -eq "False"){
+    New-Item $outputpath -Force
+    $jsondb | Out-File -FilePath $outputpath -Force -Encoding utf8
 
-New-Item $outputpath -Force
-$jsondb | Out-File -FilePath $outputpath -Force -Encoding utf8
+}else {
+    $jsondb | Out-File -FilePath $outputpath -Force -Encoding utf8
+}
+
+
 
 
 
