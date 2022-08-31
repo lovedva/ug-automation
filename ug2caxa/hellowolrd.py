@@ -34,6 +34,7 @@ def main(fn,fnout):
     doc.layers.add(name="修改图层", lineweight=80,color=1, linetype="Continuous" ) # ※这里放置需要修改的内容
     doc.layers.add(name="螺纹线线层", lineweight=18,color=7, linetype="Continuous")
     doc.layers.add(name="文字图层", lineweight=18,color=3, linetype="Continuous")
+    doc.layers.add(name="隐藏层", lineweight=18,color=-1, linetype="Continuous")
     # Query规则查找对象，处理对象。   https://ezdxf.readthedocs.io/en/stable/tutorials/getting_data.html#entity-queries
     # 删除不可见线
     print("删除不可见线，dxf属性 ('invisible', 1)")
@@ -43,6 +44,11 @@ def main(fn,fnout):
     
     print ("删除UG的表格框，以block块标签TabularNote.*正则匹配")
     ugtables=msp.query('INSERT[name?"TabularNote.*"]')
+    for e in ugtables:
+        msp.delete_entity(e)
+
+    print ("删除视图边框，以颜色=35匹配")
+    ugtables=msp.query('LINE[color==35 & lineweight==18]')
     for e in ugtables:
         msp.delete_entity(e)
 
@@ -73,7 +79,7 @@ def main(fn,fnout):
         # e.set_dxf_attrib("dimstyle","标准")
 
     print ("查找失效尺寸线，匹配规则为绿色Block,设置图层为修改图层")
-    inserts = msp.query('INSERT[color==3]') #※使用正则表达式查找文字文字注释引用快对象※
+    inserts = msp.query('INSERT[color==3]') 
     if len(inserts):
         for e in inserts:
             # print (e.dxfattribs().items()) #获取所有可以使用的dxf属性attribute
@@ -206,17 +212,17 @@ def main(fn,fnout):
     # delent = msp.query('*[layer=="1" | layer=="170" | layer=="173" | layer=="10"|layer=="Defpoints"]') #删除不需要的线条
     # for e in delent:
     #     msp.delete_entity(e)
-    for e in list(doc.tables.layers.entries.keys()): # 迭代变异报错使用list固定迭代列表https://blog.csdn.net/uncle_ll/article/details/120992227
-        if e not in ('粗实线层','中心线层','尺寸线层','细实线层','虚线层', '剖面线层','修改图层','螺纹线线层','文字图层'):
-            print (e)
-            doc.layers.remove(e) #删除元素会导致被遍历的列表变化，所以报错
-            querystr="*[layer==\"%s\"]" %(e)
-            print (querystr)
-            delent1= msp.query(querystr)
-            for i in delent1:
-                msp.delete_entity(i)
+    # for e in list(doc.tables.layers.entries.keys()): # 迭代变异报错使用list固定迭代列表https://blog.csdn.net/uncle_ll/article/details/120992227
+    #     if e not in ('粗实线层','中心线层','尺寸线层','细实线层','虚线层', '剖面线层','修改图层','螺纹线线层','文字图层'):
+    #         print (e)
+    #         doc.layers.remove(e) #删除元素会导致被遍历的列表变化，所以报错
+    #         querystr="*[layer==\"%s\"]" %(e)
+    #         print (querystr)
+    #         delent1= msp.query(querystr)
+    #         for i in delent1:
+    #             msp.delete_entity(i)
             
-    print ("其余不需要实体删除完毕")
+    # print ("其余不需要实体删除完毕")
 
     # doc.layers.remove("0")
     # doc.layers.remove("1")

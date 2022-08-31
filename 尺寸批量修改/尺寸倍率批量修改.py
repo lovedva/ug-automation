@@ -5,7 +5,7 @@
 filename="1.dxf"; outputfile="output_尺寸批处理.dxf"
 
 # 引入包
-import ezdxf, os
+import ezdxf, re
 
 def main(fn,fnout):
     print ("按文件名获取文件对象，如报错检查文件名,当前文件名为：",fn)
@@ -39,7 +39,12 @@ def main(fn,fnout):
         else: 
             e.dxf.text=replaceTEXT
         print ("打印修改后显示尺寸",replaceTEXT)
-        
+        # https://ezdxf.readthedocs.io/en/stable/tables/dimstyle_table_entry.html#ezdxf.entities.DimStyle
+
+        if re.findall("[\u4e00-\u9fa5]",e.dxf.text):
+            print ("包含中文的尺寸文字为:",e.dxf.text)
+            dimstloverride=e.override()
+            # dimstloverride.set_text_align(halign="above2") #,valign= "None"
 
     print("保存文件，如报错检查文件是否被别的软件打开被占用")
     doc.saveas(fnout,"utf-8") 
