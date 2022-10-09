@@ -34,7 +34,7 @@ def main(fn,fnout):
     doc.layers.add(name="修改图层", lineweight=80,color=1, linetype="Continuous" ) # ※这里放置需要修改的内容
     doc.layers.add(name="螺纹线线层", lineweight=18,color=7, linetype="Continuous")
     doc.layers.add(name="文字图层", lineweight=18,color=3, linetype="Continuous")
-    doc.layers.add(name="隐藏层", lineweight=18,color=-1, linetype="Continuous")
+    doc.layers.add(name="隐藏层", lineweight=18,color=1, linetype="Continuous")
     # Query规则查找对象，处理对象。   https://ezdxf.readthedocs.io/en/stable/tutorials/getting_data.html#entity-queries
     # 删除不可见线
     print("删除不可见线，dxf属性 ('invisible', 1)")
@@ -71,7 +71,7 @@ def main(fn,fnout):
         # print(e.dxf.text, "尺寸结束")
         # print(e.dxf.text.replace(" <>","<>"))
         e.dxf.text=e.dxf.text.replace(" <>","<>") #修改尺寸文字，去掉尺寸前空格
-        e.dxf.text=e.dxf.text.replace("直径","c%") # 把“直径”字符改成caxa中φ代号"c%"
+        e.dxf.text=e.dxf.text.replace("直径","%%c") # 把“直径”字符改成caxa中φ代号"%c",%转义
         e.set_dxf_attrib("layer","尺寸线层")  #设置尺寸对象图层为尺寸线层
         e.set_dxf_attrib("linetype","BYLAYER")  
         e.set_dxf_attrib("color",256)  

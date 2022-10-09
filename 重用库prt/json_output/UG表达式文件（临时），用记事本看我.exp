@@ -1,0 +1,22 @@
+﻿//  Version 2, 10/09/2022 15:10:09※注意自动生成的exp的顺序是打乱的
+[MilliMeter]b1_底板=120
+[MilliMeter]b3_筋板=96
+[MilliMeter]b4_垫板=200
+[MilliMeter]D0_容器外径=450
+[MilliMeter]e_垫板=48
+[MilliMeter]h_鞍座高度=200
+[MilliMeter]id=9
+[MilliMeter]l1_底板=420
+[MilliMeter]l2_螺栓间距=290
+//[MilliMeter]l3_筋板=NONE
+[MilliMeter]lARC_弧长_垫板=540
+[MilliMeter]t_DN=450
+[MilliMeter]t_是否标准=1
+(String) t_来源标准="JB_T4712.1-2007容器支座第1部分鞍式支座"
+(String) t_模型正式名称="DN159-450包角重型B型带垫板鞍式支座"
+(String) t_注释="默认注释"
+[MilliMeter]σ1_底板=8
+[MilliMeter]σ2_腹板=8
+[MilliMeter]σ3_筋板=8
+[MilliMeter]σ4_垫板=6
+

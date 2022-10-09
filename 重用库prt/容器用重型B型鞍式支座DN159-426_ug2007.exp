@@ -1,20 +1,20 @@
-﻿// Version:  2
-[MilliMeter]D0_容器外径=166
+﻿// Version:  2 这里的顺序是跟excel相同的
+[MilliMeter]D0_容器外径=273 
 [MilliMeter]h_鞍座高度=200
-[MilliMeter]l1_底板=160
+[MilliMeter]l1_底板=260
 [MilliMeter]b1_底板=120
 [MilliMeter]σ1_底板=8
 [MilliMeter]σ2_腹板=8
 // [MilliMeter]l3_筋板=96  //一个筋板没有这一项
 [MilliMeter]b3_筋板=96  
 [MilliMeter]σ3_筋板=8
-[MilliMeter]lARC_弧长_垫板=210  //似乎也不参与草图生成模型
-[MilliMeter]b4_垫板=160
+[MilliMeter]lARC_弧长_垫板=330  //似乎也不参与草图生成模型
+[MilliMeter]b4_垫板=180
 [MilliMeter]σ4_垫板=6
-[MilliMeter]e_垫板=28
-[MilliMeter]l2_螺栓间距=100
+[MilliMeter]e_垫板=38
+[MilliMeter]l2_螺栓间距=180
 
-//以下变量不参与草图生成模型 tag
+//以下变量不参与草图生成模型，来自标准，不一定准确 tag
 (String) t_备注="P12"
 (String) t_参考标准="容器支座_JB／T_4712.1-2007"
 (String) t_标准地址="localhost://"
