@@ -1,13 +1,13 @@
 ﻿
 Unigraphics NX V2007 / 2D Exchange
 
-Reading part: D:\workspace\workspace\3.20qh超高音速风洞\3D\出图专用prt\D0166鞍式支座_dwg1.prt
+Reading part: D:\workspace\workspace\3.20qh超高音速风洞\3D\出图专用prt\前室筒体-入口扩张段_dwg1.prt
 
 
-Writing part: D:\AppData\Local\Temp\Eric4B90DCDF5pj0.prt
+Writing part: D:\AppData\Local\Temp\Eric5CB813843dl1.prt
 
-Elapsed time   :    0 minutes,  9 seconds
-Actual CPU Time:    0 minutes,  9 seconds
+Elapsed time   :    0 minutes,  7 seconds
+Actual CPU Time:    0 minutes,  6 seconds
 
 
  
@@ -17,49 +17,43 @@ Actual CPU Time:    0 minutes,  9 seconds
  
 Dimensions in input Part 
 -------------------------------------------------------------------------------------------------------------
-Linear                                         :	17
-Radial                                         :	2
-Angular                                        :	2
+Linear                                         :	13
+Radial                                         :	4
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	21
+Total                                          :	17
 -------------------------------------------------------------------------------------------------------------
 
  
 Other annotations in input Part 
 -------------------------------------------------------------------------------------------------------------
-Note                                           :	13
-Label                                          :	1
+Note                                           :	12
+Feature Control Frame                          :	1
+Datum Feature Symbol                           :	1
+Surface Finish Symbol                          :	2
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	14
+Total                                          :	16
 -------------------------------------------------------------------------------------------------------------
 
  
 
 Dimensions in output 2D Part 
 -------------------------------------------------------------------------------------------------------------
-Linear                                         :	15
-Radial                                         :	1
-Angular                                        :	2
+Linear                                         :	13
+Radial                                         :	4
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	18
+Total                                          :	17
 -------------------------------------------------------------------------------------------------------------
 
-INFO-  Following Dimensions Exported As Grouped
--------------------------------------------------------------------------------------------------------------
-Type		Dimension Value   View 	 	     Sheet 			   Reason
--------------------------------------------------------------------------------------------------------------
-Radial          25.986            ORTHO@9            A2_1                         Converted object in 2D part not an arc
-Linear          28                ORTHO@9            A2_1                         Association point is not within view border
-Linear          160               ORTHO@9            A2_1                         Association point is not within view border
--------------------------------------------------------------------------------------------------------------
 
  
 Other annotations in output 2D Part 
 -------------------------------------------------------------------------------------------------------------
-Note                                           :	13
-Label                                          :	1
+Note                                           :	12
+Feature Control Frame                          :	1
+Datum Feature Symbol                           :	1
+Surface Finish Symbol                          :	2
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	14
+Total                                          :	16
 -------------------------------------------------------------------------------------------------------------
 INFO-
 INFO-		Unigraphics Version NX V2007 to AutoCAD 2007
@@ -67,9 +61,9 @@ INFO-
 INFO-
 INFO-		Running UGTODXF Translator .....
 INFO-
-INFO-		Start of Translation: Fri Aug 26 10:03:50 2022
+INFO-		Start of Translation: Fri Oct 21 15:50:32 2022
 INFO-
-STATUS-		Converting D:\AppData\Local\Temp\Eric4B90DCDF5pj0.prt
+STATUS-		Converting D:\AppData\Local\Temp\Eric5CB813843dl1.prt
 STATUS-
 ----------------------------------------------------------------------------
 SUMMARY-                     Warnings
@@ -77,26 +71,28 @@ SUMMARY-                     Warnings
 1. Font file <\U+5B8B\U+4F53> not found.
    For text translation improvement, set environment variable DXFDWG_FONTS_DIR to directory contaning font files
    OR place this font file at location pointed to by DXFDWG_DIR.
+2. Font file <simplex.shx> not found.
+   For text translation improvement, set environment variable DXFDWG_FONTS_DIR to directory contaning font files
+   OR place this font file at location pointed to by DXFDWG_DIR.
 -------------------------------End------------------------------------------
 
 SUMMARY-
 SUMMARY-	Summary of Unigraphics Input Entities
-SUMMARY-	For Unigraphics File: D:\AppData\Local\Temp\Eric4B90DCDF5pj0.prt
+SUMMARY-	For Unigraphics File: D:\AppData\Local\Temp\Eric5CB813843dl1.prt
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Line .....................................:	163
-SUMMARY-	Arc ......................................:	6
-SUMMARY-	Circle ...................................:	4
-SUMMARY-	Conic ....................................:	21
-SUMMARY-	Spline ...................................:	18
-SUMMARY-	Group ....................................:	6
-SUMMARY-	Note .....................................:	18
-SUMMARY-	Label ....................................:	1
-SUMMARY-	Cross Hatch ..............................:	7
-SUMMARY-	Dimension ................................:	18
+SUMMARY-	Line .....................................:	141
+SUMMARY-	Point ....................................:	3
+SUMMARY-	Arc ......................................:	18
+SUMMARY-	Circle ...................................:	29
+SUMMARY-	Group ....................................:	3
+SUMMARY-	Note .....................................:	12
+SUMMARY-	Cross Hatch ..............................:	1
+SUMMARY-	Dimension ................................:	17
+SUMMARY-	GD & T Symbol ............................:	2
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	262
+SUMMARY-	Total ....................................:	226
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 STATUS-
@@ -106,22 +102,21 @@ SUMMARY-	Summary of AutoCAD Output Entities
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Arc ......................................:	8
-SUMMARY-	Circle ...................................:	4
-SUMMARY-	Spline ...................................:	18
-SUMMARY-	Dimension ................................:	18
-SUMMARY-	Line .....................................:	238
-SUMMARY-	Ellipse ..................................:	21
-SUMMARY-	Leader ...................................:	1
-SUMMARY-	Solid 2D .................................:	37
-SUMMARY-	Hatch ....................................:	7
-SUMMARY-	Multiline Text ...........................:	90
-SUMMARY-	Group ....................................:	6
+SUMMARY-	Arc ......................................:	20
+SUMMARY-	Circle ...................................:	29
+SUMMARY-	Dimension ................................:	15
+SUMMARY-	Point ....................................:	3
+SUMMARY-	Line .....................................:	266
+SUMMARY-	Leader ...................................:	4
+SUMMARY-	Solid 2D .................................:	35
+SUMMARY-	Hatch ....................................:	1
+SUMMARY-	Multiline Text ...........................:	110
+SUMMARY-	Group ....................................:	3
 SUMMARY-	Layout ...................................:	6
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	457
+SUMMARY-	Total ....................................:	495
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 INFO-
-INFO-		End of Translation: Fri Aug 26 10:04:23 2022
-INFO-		Translation CPU time: 0 m, 34 sINFO-
+INFO-		End of Translation: Fri Oct 21 15:51:05 2022
+INFO-		Translation CPU time: 0 m, 33 sINFO-

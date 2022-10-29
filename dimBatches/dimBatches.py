@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*- 
 # ug转dxf局部放大图尺寸数值倍率批处理，先把需要修改的尺寸全部放进"尺寸数值批处理"层
 # 变量处理 
-filename="1.dxf"; outputfile="output_尺寸批处理.dxf"
+filename="b.dxf"; outputfile="output_尺寸批处理.dxf"
 
 # 引入包
 import ezdxf, re
@@ -31,7 +31,7 @@ def main(fn,fnout):
         if (round(e.get_measurement()/3,3)).is_integer():
             replaceTEXT=int(round(e.get_measurement()/3,3))
         else:
-            replaceTEXT=round(e.get_measurement()/3,3)
+            replaceTEXT=round(e.get_measurement()/5,3)
 
         print ("打印实际尺寸",e.get_measurement())
         if "<>"in e.dxf.text:

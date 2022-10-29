@@ -35,6 +35,7 @@ def main(fn,fnout):
     doc.layers.add(name="螺纹线线层", lineweight=18,color=7, linetype="Continuous")
     doc.layers.add(name="文字图层", lineweight=18,color=3, linetype="Continuous")
     doc.layers.add(name="隐藏层", lineweight=18,color=1, linetype="Continuous")
+    doc.layers.add(name="尺寸批处理", lineweight=18,color=2, linetype="Continuous")
     # Query规则查找对象，处理对象。   https://ezdxf.readthedocs.io/en/stable/tutorials/getting_data.html#entity-queries
     # 删除不可见线
     print("删除不可见线，dxf属性 ('invisible', 1)")
@@ -231,8 +232,8 @@ def main(fn,fnout):
     # doc.layers.remove("173")
     # # doc.layers.remove("10")
     # # doc.layers.remove("2")
-    # doc.layers.remove("Defpoints")
-    print ("CAXA默认以外图层删除完毕")
+    # doc.layers.remove("Defpoints") 
+    # print ("CAXA默认以外图层删除完毕")
     print ("打印当前文件包含的图层名称",doc.tables.layers.entries.keys()) 
     print("保存文件，如报错检查文件是否被别的软件打开被占用")
     doc.saveas('./output/'+fnout,"utf-8") 
