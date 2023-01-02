@@ -1,11 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*- 
 # ugdxf调整格式处理，仅限UG转出的dxf使用,其他风格dxf需要调整匹配规则
-# 变量处理 
-filename="0.dxf"; outputfile="output.dxf"
-
 # 引入包
-import ezdxf, os
+import ezdxf, os,time
+# 变量处理 
+filename=os.getcwd()+r"\0.dxf"; outputfile="output.dxf"
 
 def main(fn,fnout):
     print ("按文件名获取文件对象，如报错检查文件名,当前文件名为：",fn)
@@ -129,6 +128,7 @@ def main(fn,fnout):
         e.set_dxf_attrib("linetype","BYLAYER")  
         e.set_dxf_attrib("color",256)  
         e.set_dxf_attrib("lineweight",-1)
+        
     threadlines = msp.query('LINE [lineweight==13]').query('*[color==30]')#查找螺纹线对象
     for e in threadlines:
         # print (e.dxfattribs().items()) #获取所有可以使用的dxf属性attribute
@@ -250,7 +250,7 @@ if __name__ == "__main__":  # 用作主程序时执行
     main(filename,outputfile)
     print ("打开"+outputfile)
     os.startfile(r'.\output\%s' %(outputfile)) 
-    
+    time.sleep(3)
     
     
     

@@ -1,12 +1,12 @@
 ﻿
 Unigraphics NX V2007 / 2D Exchange
 
-Reading part: D:\workspace\workspace\3.20qh超高音速风洞\3D\出图专用prt\孔板_dwg1.prt
+Reading part: D:\workspace\workspace\@版本管理\3.20qh超高音速风洞\3D\出图专用prt\前室筒体-整流段_dwg1.prt
 
 
-Writing part: D:\AppData\Local\Temp\Eric5CB813843dpz.prt
+Writing part: D:\AppData\Local\Temp\Eric38884E21v0h7.prt
 
-Elapsed time   :    0 minutes,  6 seconds
+Elapsed time   :    0 minutes,  7 seconds
 Actual CPU Time:    0 minutes,  7 seconds
 
 
@@ -17,44 +17,48 @@ Actual CPU Time:    0 minutes,  7 seconds
  
 Dimensions in input Part 
 -------------------------------------------------------------------------------------------------------------
-Linear                                         :	1
-Radial                                         :	1
+Linear                                         :	11
+Radial                                         :	2
+Angular                                        :	1
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	2
+Total                                          :	14
 -------------------------------------------------------------------------------------------------------------
 
  
 Other annotations in input Part 
 -------------------------------------------------------------------------------------------------------------
-Note                                           :	12
-Surface Finish Symbol                          :	2
+Note                                           :	13
+Surface Finish Symbol                          :	3
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	14
+Total                                          :	16
 -------------------------------------------------------------------------------------------------------------
 
  
 
 Dimensions in output 2D Part 
 -------------------------------------------------------------------------------------------------------------
-Linear                                         :	1
+Linear                                         :	9
+Radial                                         :	2
+Angular                                        :	1
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	1
+Total                                          :	12
 -------------------------------------------------------------------------------------------------------------
 
 INFO-  Following Dimensions Exported As Grouped
 -------------------------------------------------------------------------------------------------------------
 Type		Dimension Value   View 	 	     Sheet 			   Reason
 -------------------------------------------------------------------------------------------------------------
-Radial                                               A2_1                         Hole Callout
+Linear          8                 DETAIL@16          A2_1                         Association point is not within view border
+Linear          2                 DETAIL@16          A2_1                         Association point is not within view border
 -------------------------------------------------------------------------------------------------------------
 
  
 Other annotations in output 2D Part 
 -------------------------------------------------------------------------------------------------------------
-Note                                           :	12
-Surface Finish Symbol                          :	2
+Note                                           :	13
+Surface Finish Symbol                          :	3
 -------------------------------------------------------------------------------------------------------------
-Total                                          :	14
+Total                                          :	16
 -------------------------------------------------------------------------------------------------------------
 INFO-
 INFO-		Unigraphics Version NX V2007 to AutoCAD 2007
@@ -62,36 +66,32 @@ INFO-
 INFO-
 INFO-		Running UGTODXF Translator .....
 INFO-
-INFO-		Start of Translation: Fri Oct 21 16:12:52 2022
+INFO-		Start of Translation: Mon Jan  2 22:10:43 2023
 INFO-
-STATUS-		Converting D:\AppData\Local\Temp\Eric5CB813843dpz.prt
+STATUS-		Converting D:\AppData\Local\Temp\Eric38884E21v0h7.prt
 STATUS-
 ----------------------------------------------------------------------------
 SUMMARY-                     Warnings
 ----------------------------------------------------------------------------
-1. Font file <\U+5B8B\U+4F53> not found.
-   For text translation improvement, set environment variable DXFDWG_FONTS_DIR to directory contaning font files
-   OR place this font file at location pointed to by DXFDWG_DIR.
-2. Font file <simplex.shx> not found.
-   For text translation improvement, set environment variable DXFDWG_FONTS_DIR to directory contaning font files
-   OR place this font file at location pointed to by DXFDWG_DIR.
--------------------------------End------------------------------------------
+1. -------------------------------End------------------------------------------
 
 SUMMARY-
 SUMMARY-	Summary of Unigraphics Input Entities
-SUMMARY-	For Unigraphics File: D:\AppData\Local\Temp\Eric5CB813843dpz.prt
+SUMMARY-	For Unigraphics File: D:\AppData\Local\Temp\Eric38884E21v0h7.prt
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Line .....................................:	277
-SUMMARY-	Point ....................................:	3
-SUMMARY-	Circle ...................................:	576
-SUMMARY-	Group ....................................:	4
-SUMMARY-	Note .....................................:	22
-SUMMARY-	Cross Hatch ..............................:	2
-SUMMARY-	Dimension ................................:	1
+SUMMARY-	Line .....................................:	208
+SUMMARY-	Point ....................................:	1
+SUMMARY-	Arc ......................................:	8
+SUMMARY-	Circle ...................................:	27
+SUMMARY-	Spline ...................................:	2
+SUMMARY-	Group ....................................:	6
+SUMMARY-	Note .....................................:	16
+SUMMARY-	Cross Hatch ..............................:	6
+SUMMARY-	Dimension ................................:	12
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	885
+SUMMARY-	Total ....................................:	286
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 STATUS-
@@ -101,21 +101,22 @@ SUMMARY-	Summary of AutoCAD Output Entities
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Arc ......................................:	1
-SUMMARY-	Circle ...................................:	576
-SUMMARY-	Dimension ................................:	1
-SUMMARY-	Point ....................................:	3
-SUMMARY-	Line .....................................:	381
+SUMMARY-	Arc ......................................:	10
+SUMMARY-	Circle ...................................:	27
+SUMMARY-	Spline ...................................:	2
+SUMMARY-	Dimension ................................:	11
+SUMMARY-	Point ....................................:	1
+SUMMARY-	Line .....................................:	490
 SUMMARY-	Leader ...................................:	2
-SUMMARY-	Solid 2D .................................:	4
-SUMMARY-	Hatch ....................................:	2
-SUMMARY-	Multiline Text ...........................:	73
-SUMMARY-	Group ....................................:	4
+SUMMARY-	Solid 2D .................................:	24
+SUMMARY-	Hatch ....................................:	5
+SUMMARY-	Multiline Text ...........................:	104
+SUMMARY-	Group ....................................:	6
 SUMMARY-	Layout ...................................:	6
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	1056
+SUMMARY-	Total ....................................:	691
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 INFO-
-INFO-		End of Translation: Fri Oct 21 16:13:25 2022
-INFO-		Translation CPU time: 0 m, 32 sINFO-
+INFO-		End of Translation: Mon Jan  2 22:11:16 2023
+INFO-		Translation CPU time: 0 m, 33 sINFO-
